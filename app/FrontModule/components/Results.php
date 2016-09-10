@@ -55,8 +55,8 @@ class Results extends UI\Control
 	protected function createComponentEditFormResults()
 	{
 		
-
-		return new Nette\Application\UI\Multiplier(function ($itemId) {
+		$that = $this; // PHP 5.3 ;[
+		return new Nette\Application\UI\Multiplier(function ($itemId) use ($that) {
 
 
 			$form = new Nette\Application\UI\Form;
@@ -76,7 +76,7 @@ class Results extends UI\Control
 		
 			$form->addSubmit('btn', 'Uložit');
 
-			$form->onSuccess[] = $this->submitEditForm;
+			$form->onSuccess[] = $that->submitEditForm;
 
 
 			// $renderer = $form->getRenderer();
