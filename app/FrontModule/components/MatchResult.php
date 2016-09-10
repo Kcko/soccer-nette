@@ -24,12 +24,12 @@ class MatchResult extends UI\Control
 
     
 
-    public function renderFull($match = [])
+    public function renderFull($match = array())
     {
         $this->render($match, self::TEMPLATE_FULL);
     }
 
-    public function renderInline($match = [])
+    public function renderInline($match = array())
     {
         $this->render($match, self::TEMPLATE_INLINE);
     }
