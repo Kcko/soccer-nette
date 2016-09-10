@@ -1,0 +1,71 @@
+{var $competName = $competition_season->competition->name}
+{var $seasonName = $competition_season->season->name}
+
+{block title} {$competName} - {$seasonName} {/block}
+{block content}
+
+        <div class="row">
+
+            <div class="col-lg-8">
+                <h1 class="page-header">
+                   
+                    {$competName} - {$seasonName}
+                </h1>
+
+                
+                <div n:snippet="competition">
+                    {foreach $stageList as $id => $stage}
+
+                        {if $stage['row']['has_matches'] || $stage['row']['has_table']}
+                        
+                            <h4>
+                                <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                                <a href="#stage-{$id}" id="stage-{$id}">{$stage['name']}</a>
+                            </h4>
+         
+                            {if $stage['row']['has_matches']}
+                                <div n:snippet="result-$id">
+                                    {control results, $id}
+                                </div>
+                            {/if}                        
+
+                            {if $stage['row']['has_table']}
+                                <div n:snippet="table-$id">
+                                    {control tables, $id}
+                                </div>
+                            {/if}
+
+                           {sep} <hr /> {/sep}
+
+                        {/if}
+
+                    {/foreach}
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="well">
+                    <h4>Soutěže</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                                {foreach $competitions as $compet}
+                                    <li><a n:href="detail $compet->id">{$compet->competition->name} - {$compet->season->name}</a></li>
+                                {/foreach}
+                            </ul>
+                        </div>
+   
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+
+
+{/block}

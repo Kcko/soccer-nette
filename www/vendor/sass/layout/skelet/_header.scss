@@ -1,0 +1,100 @@
+/* Header
+---------------------------------------------------------------------------------------------------- */
+#header
+{
+	background: $bgBlack;
+	padding: 10px 0 10px 5px;
+
+	#logo 
+	{
+		float: left;
+		position: relative;
+		top: 5px;
+
+	}
+
+	.wrapper
+	{
+		max-width: 980px;
+		margin: 0 auto;
+	}
+
+
+	.search
+	{
+		float: right;
+		background: #fff;
+		margin-right: calc-percent(40, 980);
+		padding-right: 10px;
+		width: calc-percent(240, 980);
+		position: relative;
+		
+		input
+		{
+			
+			border: 0;
+			width: 100%;
+		}
+
+		#autocomplete-submit
+		{
+			position: absolute;
+			right: 10px;
+			top: 12px;
+		}
+	}
+
+
+	.user-pane
+	{
+		float: right;
+		text-align: right;
+		width: calc-percent(460, 980);
+
+		input
+		{
+			border: 0;
+			
+			&[type="text"],
+			&[type="password"]
+			{
+				width: 170px;
+			}
+		}
+
+		p
+		{
+			margin: 0;
+			a
+			{
+				color: $mute;
+	
+			}
+		}
+
+		.links
+		{
+			a
+			{
+				color: #fff;
+				text-decoration: none;
+				display: inline-block;
+				margin-left: 10px;
+				
+				&:hover
+				{
+
+				}
+			}
+		}
+	}
+
+
+	.forgot-password
+	{
+		text-align: left;
+		padding-left: 18px;
+		padding-top: 6px;
+	}
+
+}

@@ -1,0 +1,75 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+a.submit
+{
+	border: 1px solid $bgBlack;
+	background: #fff;
+	padding: 0 toEm(10);
+	font-family: $font1;
+	line-height: 40px;
+	height: 40px;
+
+}
+
+a.submit
+{
+	display: inline-block;
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+input[disabled]
+{
+	@include opacity(.3);
+	cursor:not-allowed;
+}
+
+input[type="submit"], a.submit
+{
+	padding: 0 toEm(10);
+	background: $bgBlue;
+	border: 0;
+	color: #fff;
+	font-family: $font1;
+	line-height: 40px;
+	height: 40px;
+
+	&:hover
+	{
+		background: darken($bgBlue, 3);
+	}
+
+
+
+	// velky
+	&.big
+	{
+		padding: 0 toEm(10);
+		height: 60px;
+		line-height: 60px;
+		width: 100%;
+		@include fontSize(15);
+	}
+}
+
+a.submit.gray
+{
+	background: #ddd;
+}
+
+
+.forgot-password-form
+{
+	td
+	{
+		padding: 6px 10px;
+
+		input
+		{
+			display: block;
+			width: 100%;
+		}
+	}
+}

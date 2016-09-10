@@ -1,0 +1,62 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600&subset=latin,latin-ext);
+
+*, *:before, *:after 
+{
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+*:focus, *, *:hover 
+{
+	outline: 0 !important;
+}
+
+
+
+html, body
+{
+	font-family: $font1;
+	color: $baseColor;
+	
+}
+
+html
+{
+	font-size: 62.5%; 
+}
+
+body
+{
+	@include fontSize(13);
+}
+
+
+.wrapper
+{
+	max-width: 980px;
+	margin: auto;
+	
+}
+
+
+// skelet
+@import "skelet/header";
+@import "skelet/footer";
+@import "skelet/sprites";
+@import "skelet/validaty";
+@import "skelet/cards";
+@import "skelet/alerts";
+
+
+// pages
+@import "pages/homepage";
+@import "pages/static";
+@import "pages/faq";
+@import "pages/blog";
+@import "pages/profile";
+@import "pages/guide";
+@import "pages/search";
+// @import "pages/404";
+

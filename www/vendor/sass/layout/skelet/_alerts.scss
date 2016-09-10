@@ -1,0 +1,91 @@
+/**
+  * Copyright (C) 2014 Roman Janko
+  * @file _alerts.scss
+  *
+  * changelog
+  * 2014-09-12[14:39:52]
+  *
+  * @author janko@andweb.cz
+  * @version 1.0-rc
+  * @link http://semver.org/
+  */
+
+
+/* Alert messages
+---------------------------------------------------------------------------------------------------- */
+%alert
+{
+
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 70px;
+    position: relative;
+
+    ul, li
+    {
+        list-style: none;
+    }
+
+    a
+    {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    .close
+    {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        cursor: pointer;
+    }
+}
+
+
+.alert-danger,
+.alert-error,
+.errors
+{
+    @extend %alert;
+    background: image-url("messages2/error.png") no-repeat 20px 50% #ffd1d1;
+    border: 1px solid #f8acac;
+    color: #a20000;
+    
+    a
+    {
+        color: #a20000;
+    }
+}
+
+
+.alert-success,
+.alert-ok,
+.alert.success
+{
+    @extend %alert;
+    background: image-url("messages2/success.png") no-repeat 20px 50% #eaf7d9;
+    border: 1px solid #bbdf8d;
+    color: #336801;
+
+    a
+    {
+        color: #336801;
+    }
+
+}
+
+.alert-information,
+.alert.information
+{
+    @extend %alert;
+    background: image-url("messages2/information.png") no-repeat 20px 50% #e8f6ff;
+    border: 1px solid #b8e2fb;
+    color: #005898;
+
+    a
+    {
+        color: #005898;
+    }
+}

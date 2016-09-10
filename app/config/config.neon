@@ -1,0 +1,28 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+parameters:
+
+
+php:
+	date.timezone: Europe/Prague
+
+
+nette:
+	application:
+		errorPresenter: Front:Error
+		#catchExceptions: true # aby se to chovalo jako ostry, kvuli 404, 404 se pak nekesuje a neni videt ladenka
+		mapping:
+			*: App\*Module\Presenters\*Presenter
+
+	session:
+		expiration: 7 day
+		save_path: %tempDir%/sessions
+
+
+services:
+	- App\RouterFactory
+	router: @App\RouterFactory::createRouter

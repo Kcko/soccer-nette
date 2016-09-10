@@ -1,0 +1,11 @@
+{block content}
+	{var $homeTeam = $match->ref('team', 'team_home_id')}                    
+	{var $awayTeam = $match->ref('team', 'team_away_id')}  
+	
+	<h1>
+		{$homeTeam->name} - {$awayTeam->name}	
+		<small>editace zápasu, #{$match->id}</small>
+	</h1>
+
+	{control editForm}
+{/block}

@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "cardbook-v1";
+  src:url("/assets/css/fonts-v1/cardbook-v1.eot");
+  src:url("/assets/css/fonts-v1/cardbook-v1.eot?#iefix") format("embedded-opentype"),
+    url("/assets/css/fonts-v1/cardbook-v1.woff") format("woff"),
+    url("/assets/css/fonts-v1/cardbook-v1.ttf") format("truetype"),
+    url("/assets/css/fonts-v1/cardbook-v1.svg#cardbook-v1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "cardbook-v1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ico-"]:before,
+[class*=" ico-"]:before {
+  font-family: "cardbook-v1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico:before {
+  content: "a";
+}
+.ico-1:before {
+  content: "b";
+}
+.ico-2:before {
+  content: "c";
+}
+.ico-3:before {
+  content: "d";
+}
+.ico-4:before {
+  content: "e";
+}
+.ico-5:before {
+  content: "f";
+}
+.ico-6:before {
+  content: "g";
+}
+.ico-7:before {
+  content: "h";
+}
+.ico-8:before {
+  content: "i";
+}
+.ico-9:before {
+  content: "j";
+}
+.ico-10:before {
+  content: "k";
+}
+.ico-11:before {
+  content: "l";
+}
+.ico-12:before {
+  content: "m";
+}
+.ico-13:before {
+  content: "n";
+}
+.ico-14:before {
+  content: "o";
+}
+.ico-15:before {
+  content: "p";
+}
+.ico-16:before {
+  content: "q";
+}
+.ico-18:before {
+  content: "s";
+}
+.ico-19:before {
+  content: "t";
+}
+.ico-20:before {
+  content: "u";
+}
+.ico-21:before {
+  content: "v";
+}
+.ico-22:before {
+  content: "w";
+}
+.ico-23:before {
+  content: "x";
+}
+.ico-24:before {
+  content: "y";
+}
+.ico-17:before {
+  content: "r";
+}
+.ico-25:before {
+  content: "z";
+}
+.ico-26:before {
+  content: "A";
+}
+.ico-27:before {
+  content: "B";
+}
+.ico-28:before {
+  content: "C";
+}
+.ico-29:before {
+  content: "D";
+}
+.ico-30:before {
+  content: "E";
+}
+.ico-31:before {
+  content: "F";
+}
+.ico-32:before {
+  content: "G";
+}
+.ico-33:before {
+  content: "H";
+}
+.ico-34:before {
+  content: "I";
+}
+.ico-35:before {
+  content: "J";
+}
+.ico-36:before {
+  content: "K";
+}
+.ico-37:before {
+  content: "L";
+}
+.ico-38:before {
+  content: "M";
+}
+.ico-39:before {
+  content: "N";
+}
+.ico-40:before {
+  content: "O";
+}
+.ico-41:before {
+  content: "P";
+}
+.ico-42:before {
+  content: "Q";
+}
+.ico-43:before {
+  content: "R";
+}
+.ico-44:before {
+  content: "S";
+}
+.ico-45:before {
+  content: "T";
+}
+.ico-46:before {
+  content: "U";
+}
+.ico-47:before {
+  content: "V";
+}
+.ico-48:before {
+  content: "W";
+}
+.ico-49:before {
+  content: "X";
+}
+.ico-50:before {
+  content: "Y";
+}
+.ico-51:before {
+  content: "Z";
+}
+.ico-52:before {
+  content: "0";
+}
+.ico-53:before {
+  content: "1";
+}
+.ico-54:before {
+  content: "2";
+}

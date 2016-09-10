@@ -1,0 +1,31 @@
+/* Nastaveni barevsemicoloneac
+---------------------------------------------------------------------------------------------------- */
+$baseColor: #333;
+$bgBlack: #2e3641;
+$bgBlackDarken: #21262d;
+$bgBlue: #00b4ff;
+$mute: #959799;
+$red: #ffd2d2;
+$green: #c1ffe0;
+
+$font1: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+
+
+
+
+$colors: (red #FF3F00), (green #83BA41), (blue #0080FF), (black #000);
+
+@each $color in $colors {
+    $colorClass: nth($color, 1);
+    $colorCode: nth($color, 2);
+
+    .c-#{$colorClass} 
+    {
+        color: $colorCode !important;    	
+
+    }
+	
+			
+	
+}

@@ -1,0 +1,112 @@
+#footer
+{
+	background: $bgBlack;
+
+	> .wrapper
+	{
+		max-width: 980px;
+		margin: 0 auto;
+		
+		padding: 2em 0;
+
+		h3
+		{
+			margin-top: 0;
+			color: #fff;
+		}
+	}
+
+	.copyright
+	{
+		background: $bgBlackDarken;
+
+		> .wrapper
+		{
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 1em 0;
+		}
+
+		.tirage
+		{
+
+			font-size: 75%;
+
+			$color: #3b4144;
+			color: $color;
+			a
+			{
+				color: $color;
+			}
+		}
+	}
+	
+	.c1, .c2
+	{
+		width: 46%;
+		float: left;
+
+		table
+		{
+			width: 100%;
+			td
+			{
+				padding: 6px;
+				width: 50%;
+				vertical-align: top;
+			}
+
+			td.pad12
+			{
+				padding-top: 12px;
+			}
+		}
+
+
+	}
+
+	.c2
+	{
+		float: right;
+	}
+
+	input, textarea
+	{
+		display: block;
+		width: 100%;
+		border: 0px;
+	}
+
+	textarea
+	{
+		height: 92px;
+	}
+
+
+	.recommend-us
+	{
+		table td
+		{
+			width: 33.33%;
+		}
+	}
+
+	.join-us
+	{
+		h3
+		{
+			margin-top: .5em;
+		}
+
+		a
+		{
+			margin-right: 12px;
+
+			&:hover
+			{
+				@include opacity(.8); 
+			}
+		}
+	}
+
+}

@@ -1,0 +1,181 @@
+/**
+  * Copyright (C) 2014 Roman Janko
+  * _profile.scss
+  *
+  * changelog
+  * 06.10.2014 20:11:57:revised
+  *
+  * @author janko@andweb.cz
+  * @version 0.1.0
+  * @since 0.1.0
+  */
+
+.profile-crumbs
+{
+    border-bottom: 4px solid #2e3641;
+    padding: 20px 0;
+    color: $bgBlack;
+    margin-bottom: 30px;
+
+    ul
+    {
+        @include resetMP;
+        list-style-type: none;
+        @include fontSize(13);
+        margin-left: -.3em;
+
+        li
+        {
+            display: inline-block;
+            margin-right: -4px;
+            padding-left: .3em;
+
+            a
+            {
+                padding-right: 0.3em;
+            }
+
+            &:last-child:after
+            {
+                content: "";
+            }
+
+            &:after
+            {
+                content: ">";
+            }
+
+        }
+    }
+
+    a
+    {
+        color: $bgBlack;
+        text-decoration: none;
+    }
+}
+
+
+.profile
+{
+    .header-section, .content-section
+    {
+        @include clear;
+        margin-bottom: 40px;
+
+    }
+
+    .qr, .card
+    {
+        float: left;
+        margin-right: calc-percent(30, 980);
+
+        img
+        {
+            border: 1px solid #e8e8e8;
+        }
+        .headline
+        {
+            padding-bottom: 10px;
+        }
+    }
+
+    .qr
+    {
+        width: calc-percent(200, 980);
+    }    
+
+    .card
+    {
+        width: calc-percent(360, 980);
+
+        &.back
+        {
+            float: right;
+            margin-right: 0;
+        }
+    }
+
+
+    .content-section
+    {
+        .content
+        {
+            float: left;
+            width: calc-percent(590, 980);
+        }
+
+        .menu
+        {
+            float: right;
+            width: calc-percent(360, 980);
+
+            ul
+            {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                a
+                {
+                    border: 1px solid #e8e8e8;
+                    display: block;
+                    padding: 15px;
+                    padding-left: 20px;
+                    background: #fff;
+                    text-decoration: none;
+                    margin-bottom: 4px;
+                    font-size: 13px;
+                    color: $baseColor;
+
+                    i
+                    {
+                        position: relative;
+                        font-size: 1.2em;
+                        top: 3px;
+                        margin-right: 4px;
+                    }
+
+                    &:hover
+                    {
+                        background: #2e3641;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .table-profile
+    {
+        width: 100%;
+        border: 1px solid #e8e8e8;
+        background: #fff;
+
+        td:first-child
+        {
+            width: 30%;
+            font-weight: bold;
+        }
+
+        td
+        {
+            padding:  15px;
+            vertical-align: top;
+            // border-bottom: 1px solid #e8e8e8;
+        }
+    }
+
+    .cards
+    {
+        background: #fcfcfc;
+        border: 0;
+    }
+
+}
+
+
+#gMap img 
+{
+    max-width: none;
+}

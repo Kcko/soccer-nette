@@ -1,0 +1,33 @@
+0.96 <13.10.2014>
++ Google mapa - zjištování LAT / LNG z Google API + výraznější ikonka
++ Google mapa - větší zoom
++ Google mapa - zabránění rozbití kontrolních prvků (max-width: none!)
+
+0.95 <12.10.2014>
++ Průvodce nastavením 
++ Profil uživatele naplněn dynamickými daty
++ Úprava RouterFactory (profil uživatele více nahoře, obecná routa zcela dole - snažší přepis url)
+
+0.94 <6.10.2014>
++ Základ pro detail profilu
++ Header, footer - úprava prvků, marginy, paddingy, výšky
+
+0.93 <5.10.2014>
++ Zapomenuté heslo (přes 2 sekce, kvůli spamování a bezpečnosti)
++ Aktivační odkaz, sekce - napojené na registraci, člověk se poté může přihlásit.
++ Uprava přihlašování (pouze pokud je již aktivovaný)
+
+0.92 <29.9.2014>
++ O projektu
++ Import adress, krajů
++ Import pracovních pozic
++ Faq
++ Blog
++ 404
+
+0.91 <26.9.2014>
++ Registrace uživatelů + aktivační link do emailu
+
+0.90 <20.9.2014>
++ HTML, CSS Layout + napojení na Nette
+

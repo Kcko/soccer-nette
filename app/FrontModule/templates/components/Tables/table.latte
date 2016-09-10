@@ -1,0 +1,26 @@
+<table class="table table-bordered table-condensed"> 
+	<tr>
+		<th>#</th>
+		<th></th>
+		<th class="text-center">PZ</th>
+		<th class="text-center">V</th>
+		<th class="text-center">R</th>
+		<th class="text-center">P</th>
+		<th class="text-center">Sk.</th>
+		<th class="text-center">B.</th>
+	</tr>
+	{var $rank = 0}
+	{foreach $rows as $row}
+
+	<tr {if $rank < 2}class="warning"{/if}>
+		<td>{? $rank++} {$rank}.</td>
+		<td><img src="/assets/gfx/flags/16/{$row['logo']}" alt="" /> {$row['name']}</td>
+		<td class="text-center">{$row['pz']}</td>
+		<td class="text-center">{$row['w']}</td>
+		<td class="text-center">{$row['d']}</td>
+		<td class="text-center">{$row['l']}</td>
+		<td class="text-center">{$row['gf']}:{$row['ga']}</td>
+		<td class="text-center"><strong>{$row['pts']}</strong></td>
+	</tr>
+	{/foreach}
+</table>

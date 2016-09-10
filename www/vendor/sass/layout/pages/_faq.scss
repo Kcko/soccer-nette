@@ -1,0 +1,37 @@
+.faq
+{
+	.box
+	{
+		background: #fafafa;
+		border: 1px solid #e8e8e8;
+		padding: 1em;
+		margin-bottom: 10px;
+
+		time
+		{
+			font-size: 12px;
+		}
+
+		&.open
+		{
+			background: #fff;
+		}
+
+		h2
+		{
+			font-size: 16px;
+			margin: 0;
+			cursor: pointer;
+			span
+			{
+				position: relative;
+				top: 2px;
+			}
+		}
+
+		.question
+		{
+			margin-top: 10px;
+		}
+	}
+}

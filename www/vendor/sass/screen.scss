@@ -1,0 +1,42 @@
+/* ----------------------------------------------------------------------------------------------------
+
+	 * SCSS by RJ
+	 * @date 8.2.2014 10:57:34
+
+	 * DO NOT EDIT! only owner <RJ>
+
+---------------------------------------------------------------------------------------------------- */
+
+/* Internal
+---------------------------------------------------------------------------------------------------- */
+@import "compass"; // the most important framework - internal via ruby
+
+
+/*  Helpers, mixins + function + own shortcuts css helper
+---------------------------------------------------------------------------------------------------- */
+@import "helpers/mixins"; // mixin collection
+@import "helpers/functions"; // function collection
+
+/* Partials - (typography, reset ...)
+ ---------------------------------------------------------------------------------------------------- */
+@import "partials/normalize"; // normalize reset
+@import "partials/bp5"; // HTMLBoilerPlate 5 - base
+@import "partials/vars"; // colors, width ...
+@import "partials/buttons"; // buttons - fun collection ;p
+@import "partials/forms"; // forms 
+@import "partials/tables"; // tables 
+@import "helpers/shortcuts"; // my own shortcuts
+
+/* Vendor, third party plugins
+---------------------------------------------------------------------------------------------------- */
+//@import "vendor/fonts";
+@import "vendor/jquery.fancybox"; // modal window
+@import "vendor/jquery.bxslider"; // slider
+@import "vendor/slicknav"; // responsive
+@import "vendor/chosen"; 
+@import "vendor/token-input"; 
+
+/* Main Layout + responsive
+---------------------------------------------------------------------------------------------------- */
+@import "layout/layout"; // main layout of concrete web
+@import "layout/responsive"; // responsive version

@@ -1,0 +1,22 @@
+parameters:
+
+
+database:
+	dsn: 'mysql:host=localhost;dbname=soccer'
+	user: root
+	password:
+	reflection: conventional
+	options:
+		lazy: yes
+
+
+services:
+	- Cardbook\Helpers\Helpers
+	- App\Model\Competition
+	- App\Model\Table
+	- App\Model\Result
+	- App\AclFactory
+	authorizator: @App\AclFactory::createAcl
+	authenticator: App\Model\UserManager
+	- App\FrontModule\Components\MatchResultFactory
+
